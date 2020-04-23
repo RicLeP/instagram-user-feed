@@ -2,7 +2,7 @@
 
 namespace Instagram\Storage;
 
-use GuzzleHttp\Cookie\CookieJar;
+use GuzzleHttp6\Cookie\CookieJar;
 use Instagram\Exception\InstagramCacheException;
 
 class CacheManager

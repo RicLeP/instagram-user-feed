@@ -2,9 +2,9 @@
 
 namespace Instagram\Transport;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Cookie\CookieJar;
-use GuzzleHttp\Cookie\SetCookie;
+use GuzzleHttp6\Client;
+use GuzzleHttp6\Cookie\CookieJar;
+use GuzzleHttp6\Cookie\SetCookie;
 use Instagram\Exception\InstagramException;
 use Instagram\Storage\Cache;
 use Instagram\Storage\CacheManager;
@@ -48,7 +48,7 @@ class JsonTransportFeed extends TransportFeed
      * @return mixed
      *
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      * @throws \Instagram\Exception\InstagramCacheException
      */
     public function fetchData($userName, $limit)

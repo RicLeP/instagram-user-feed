@@ -2,8 +2,8 @@
 
 namespace Instagram\Auth;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Cookie\CookieJar;
+use GuzzleHttp6\Client;
+use GuzzleHttp6\Cookie\CookieJar;
 use Instagram\Exception\InstagramAuthException;
 use Instagram\Exception\InstagramException;
 use Instagram\Transport\TransportFeed;
@@ -31,7 +31,7 @@ class Login
      *
      * @throws InstagramAuthException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function execute($username, $password)
     {

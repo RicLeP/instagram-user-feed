@@ -28,6 +28,6 @@ try {
 
 } catch (Exception $exception) {
     print_r($exception->getMessage());
-} catch (\GuzzleHttp\Exception\GuzzleException $e) {
+} catch (\GuzzleHttp6\Exception\GuzzleException $e) {
     print_r($exception->getMessage());
 }

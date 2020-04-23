@@ -2,8 +2,8 @@
 
 namespace Instagram;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Cookie\CookieJar;
+use GuzzleHttp6\Client;
+use GuzzleHttp6\Cookie\CookieJar;
 use Instagram\Auth\Login;
 use Instagram\Exception\InstagramCacheException;
 use Instagram\Exception\InstagramException;
@@ -54,7 +54,7 @@ class Api
      *
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      * @throws \Exception
      */
     public function getFeed($limit = 12)
@@ -106,7 +106,7 @@ class Api
      * @throws Exception\InstagramAuthException
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function login($username, $password, Client $client = null)
     {

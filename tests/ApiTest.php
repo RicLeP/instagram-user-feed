@@ -1,10 +1,10 @@
 <?php
 namespace Instagram\tests;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Response;
+use GuzzleHttp6\Client;
+use GuzzleHttp6\Handler\MockHandler;
+use GuzzleHttp6\HandlerStack;
+use GuzzleHttp6\Psr7\Response;
 
 use Instagram\Api;
 use Instagram\Exception\InstagramCacheException;
@@ -132,7 +132,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testEmptyCacheValueOnJsonFeed()
     {
@@ -145,7 +145,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testInvalidCacheValueOnJsonFeed()
     {
@@ -158,7 +158,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testValidCacheValueOnJsonFeed()
     {
@@ -171,7 +171,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testInvalidJsonFeedReturn()
     {
@@ -186,7 +186,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testEmptyUserName()
     {
@@ -199,7 +199,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testValidFeedReturn()
     {
@@ -214,7 +214,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testInvalidHtmlFeedReturn()
     {
@@ -228,7 +228,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testValidHtmlFeedAndInvalidJsonValue()
     {
@@ -242,7 +242,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testUnwritableCacheManager()
     {
@@ -257,7 +257,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testFeedContent()
     {
@@ -291,7 +291,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testMediaContent()
     {
@@ -350,7 +350,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testHtmlFeedWithNoCacheManager()
     {
@@ -365,7 +365,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     /**
      * @throws InstagramCacheException
      * @throws InstagramException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \GuzzleHttp6\Exception\GuzzleException
      */
     public function testStatementHtmlFeedWithVideoPost()
     {

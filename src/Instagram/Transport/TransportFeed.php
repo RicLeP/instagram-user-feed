@@ -2,7 +2,7 @@
 
 namespace Instagram\Transport;
 
-use GuzzleHttp\Client;
+use GuzzleHttp6\Client;
 use Instagram\Storage\CacheManager;
 
 abstract class TransportFeed
